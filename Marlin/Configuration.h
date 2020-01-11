@@ -927,7 +927,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -37, -27, -0.85 }
+#define NOZZLE_TO_PROBE_OFFSET { -37, -27, -0.51 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 20
@@ -1013,7 +1013,7 @@
 // WARNING: When motors turn off there is a chance of losing position accuracy!
 #define DISABLE_X false
 #define DISABLE_Y false
-#define DISABLE_Z true
+#define DISABLE_Z false
 
 // Warn on display about possibly reduced accuracy
 //#define DISABLE_REDUCED_ACCURACY_WARNING
@@ -1329,7 +1329,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (50*30, 50*30)
+#define HOMING_FEEDRATE_XY (60*30, 60*30)
 #define HOMING_FEEDRATE_Z  (4*30)
 
 // Validate that endstops are triggered on homing moves
