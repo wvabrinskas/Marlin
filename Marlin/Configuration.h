@@ -112,7 +112,8 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
- #define SERIAL_PORT_2 2
+ //set to 1 to use LCD uart on BTT TFT 3
+#define SERIAL_PORT_2 1
 
 /**
  * This setting determines the communication speed of the printer.
@@ -123,7 +124,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 250000
+#define BAUDRATE 115200
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -1875,6 +1876,9 @@
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
 #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+//#define ST7920_DELAY_1 DELAY_0_NOP
+//#define ST7920_DELAY_2 DELAY_2_NOP
+//#define ST7920_DELAY_3 DELAY_0_NOP
 
 //
 // ReprapWorld Graphical LCD
