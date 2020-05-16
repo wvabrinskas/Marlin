@@ -1515,7 +1515,7 @@
  */
 #if PROBE_SELECTED && !IS_KINEMATIC
   #define MIN_PROBE_EDGE_LEFT 20
-  #define MIN_PROBE_EDGE_RIGHT 40
+  #define MIN_PROBE_EDGE_RIGHT 35
   #define MIN_PROBE_EDGE_FRONT 20
   #define MIN_PROBE_EDGE_BACK 52
 #endif
@@ -1524,7 +1524,7 @@
   // Override the mesh area if the automatic (max) area is too large
   #define MESH_MIN_X 20
   #define MESH_MIN_Y 20
-  #define MESH_MAX_X X_BED_SIZE - 40
+  #define MESH_MAX_X X_BED_SIZE - 35
   #define MESH_MAX_Y Y_BED_SIZE - 52
 #endif
 
