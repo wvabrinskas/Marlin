@@ -1533,12 +1533,12 @@
  * Override if the automatically selected points are inadequate.
  */
 #if EITHER(AUTO_BED_LEVELING_3POINT, AUTO_BED_LEVELING_UBL)
-  //#define PROBE_PT_1_X 15
-  //#define PROBE_PT_1_Y 180
-  //#define PROBE_PT_2_X 15
-  //#define PROBE_PT_2_Y 20
-  //#define PROBE_PT_3_X 170
-  //#define PROBE_PT_3_Y 20
+  #define PROBE_PT_1_X 20
+  #define PROBE_PT_1_Y Y_BED_SIZE - 52
+  #define PROBE_PT_2_X 20
+  #define PROBE_PT_2_Y 20
+  #define PROBE_PT_3_X 160
+  #define PROBE_PT_3_Y 120
 #endif
 
 /**
@@ -1560,9 +1560,9 @@
  */
 #if PROBE_SELECTED && !IS_KINEMATIC
   #define MIN_PROBE_EDGE_LEFT 20
-  #define MIN_PROBE_EDGE_RIGHT 35
+  #define MIN_PROBE_EDGE_RIGHT 15
   #define MIN_PROBE_EDGE_FRONT 20
-  #define MIN_PROBE_EDGE_BACK 52
+  #define MIN_PROBE_EDGE_BACK 48
 #endif
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
